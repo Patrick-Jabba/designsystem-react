@@ -9,3 +9,6 @@
 
 ## Aula 02:  
 ### Exportar os tokens e componentes do Figma para o código criando a base do projeto em React e a documentação utilizando Storybook.
+
+## Aula 03:
+### Automatização do processo de deploy através do storybook deployer e resolução dos componentes em tela
