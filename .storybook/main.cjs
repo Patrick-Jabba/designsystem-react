@@ -1,6 +1,5 @@
 module.exports = {
-  stories: ["../src/**/*.stories.mdx",
-   "../src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -13,12 +12,16 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+    interactionsDebugger: true,
   },
+  staticDirs: [
+    "../public"
+  ],
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
       config.base = "/designsystem-react/";
     }
 
-    return config
+    return config;
   },
 };
